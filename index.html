@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Leagueoflegends</title>
+
+    <style>
+        .carousel-item {
+            height: 65vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        section.pricing {
+            background: #007bff;
+            background: linear-gradient(to right, #0062E6, #33AEFF);
+        }
+
+        .pricing .card {
+            border: none;
+            border-radius: 1rem;
+            transition: all 0.2s;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing hr {
+            margin: 1.5rem 0;
+        }
+
+        .pricing .card-title {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+        }
+
+        .pricing .card-price {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .pricing .card-price .period {
+            font-size: 0.8rem;
+        }
+
+        .pricing ul li {
+            margin-bottom: 1rem;
+        }
+
+        .pricing .text-muted {
+            opacity: 0.7;
+        }
+
+        .pricing .btn {
+            font-size: 80%;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            opacity: 0.7;
+            transition: all 0.2s;
+        }
+
+        /* Hover Effects on Card */
+
+        @media (min-width: 992px) {
+            .pricing .card:hover {
+                margin-top: -.25rem;
+                margin-bottom: .25rem;
+                box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+            }
+
+            .pricing .card:hover .btn {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">league of legend</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('lol.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4 ">halaman pertama</h3>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('Leagueoflegends.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">halaman kedua</h3>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('lol-logo.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">halaman ketiga</h3>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="font-weight-light">Half Page Image Slider</h1>
+            <p class="lead">Selamat datang di website game league of legend tempat para gamer lol mendaftar <a
+                    href="https://unsplash.com"></a>!</p>
+        </div>
+        <!-- Header -->
+        <header class="bg-primary text-center py-5 mb-4">
+            <div class="container">
+                <h1 class="font-weight-light text-white">Meet the Team</h1>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="pemainlol.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="pemainlol2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="pemainlol3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="pemainlol4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+        <section class="pricing py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Free Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                                <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li class="text-muted"><span class="fa-li"><i
+                                                class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                    <li class="text-muted"><span class="fa-li"><i
+                                                class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free
+                                        Subdomain</li>
+                                    <li class="text-muted"><span class="fa-li"><i
+                                                class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                                <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong>
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                        Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                                    <li class="text-muted"><span class="fa-li"><i
+                                                class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                                <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited
+                                            Users</strong></li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                        Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support
+                                    </li>
+                                    <li><span class="fa-li"><i
+                                                class="fas fa-check"></i></span><strong>Unlimited</strong> Free
+                                        Subdomains</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="row text-center">
+
+        <div class="col">
+            <a href="https://instagram.com/fahmi_mii__" target="_blank" class="text-danger h3">
+                <i class="fab fa-instagram display-2"></i> <br> instagram </a>
+        </div>
+        <div class="col">
+            <a href="https://facebook.com/mansur fahmi" target="_blank" class="text-primary h3">
+                <i class="fab fa-facebook display-2"></i><br>facebook</a>
+
+        </div>
+        <div class="col">
+            <a href="https://twitter.com/mansur fahmi" target="_blank" class="text-info h3">
+                <i class="fab fa-twitter display-2"></i><br>twitter</a>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="row bg-dark text-white text-center ">
+            <div class="col">
+                copyrigh
+            </div>
+    </section>
+
+    </section>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
